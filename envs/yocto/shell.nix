@@ -29,7 +29,9 @@ let
       diffstat
       expect
       file
+	  # https://github.com/NixOS/nixpkgs/issues/86272
       gcc
+	  (gcc.cc // { meta.priority = 10; })
       gdb
       git
       gnumake
