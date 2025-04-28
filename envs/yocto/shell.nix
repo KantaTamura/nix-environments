@@ -59,6 +59,12 @@ let
       bison
       flex
       pkg-config
+	  dig
+	  ps
+	  xterm
+	  autoconf271
+	  libtool
+	  rsync
     ] ++ (with pkgs.xorg; [
       libX11
       libXext
